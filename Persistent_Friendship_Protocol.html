@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Persistent Friendship Protocol (PFP)</title>
+
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --bg: #fefefe;
+        --black: #000000;
+        --accent: #ff006e;
+        --yellow: #ffd60a;
+        --blue: #00bbf9;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'IBM Plex Mono', monospace;
+        background: var(--bg);
+        color: var(--black);
+    }
+
+    header {
+        background: var(--yellow);
+        padding: 40px;
+        border-bottom: 6px solid var(--black);
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    header p {
+        margin-top: 10px;
+        font-size: 14px;
+        max-width: 700px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        min-height: 100vh;
+    }
+
+    nav {
+        border-right: 6px solid var(--black);
+        padding: 20px;
+        background: var(--blue);
+    }
+
+    .nav-item {
+        display: block;
+        margin-bottom: 15px;
+        padding: 10px;
+        background: white;
+        border: 3px solid var(--black);
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.1s;
+    }
+
+    .nav-item:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 4px 4px 0 var(--black);
+    }
+
+    .nav-item.active {
+        background: var(--accent);
+        color: white;
+    }
+
+    main {
+        padding: 50px;
+    }
+
+    section {
+        display: none;
+        margin-bottom: 40px;
+        padding: 25px;
+        border: 4px solid var(--black);
+        background: white;
+        box-shadow: 8px 8px 0 var(--black);
+    }
+
+    section.active {
+        display: block;
+    }
+
+    h2 {
+        margin-top: 0;
+        font-size: 22px;
+        border-bottom: 3px solid var(--black);
+        padding-bottom: 8px;
+    }
+
+    ul {
+        line-height: 1.6;
+    }
+
+    footer {
+        padding: 20px;
+        border-top: 6px solid var(--black);
+        background: var(--yellow);
+        font-size: 12px;
+    }
+
+    @media (max-width: 900px) {
+        .container {
+            grid-template-columns: 1fr;
+        }
+        nav {
+            border-right: none;
+            border-bottom: 6px solid var(--black);
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Persistent Friendship Protocol (PFP)</h1>
+    <p>
+        A structured protocol for maintaining long-term group friendship cohesion under distance, time fragmentation, and coordination friction.
+        Designed to resist friendship entropy through recurring narrative reinforcement.
+    </p>
+</header>
+
+<div class="container">
+
+<nav>
+    <div class="nav-item active" onclick="openSection(event, 'overview')">Overview</div>
+    <div class="nav-item" onclick="openSection(event, 'definitions')">Definitions</div>
+    <div class="nav-item" onclick="openSection(event, 'axioms')">Axioms</div>
+    <div class="nav-item" onclick="openSection(event, 'implementation')">Implementation</div>
+    <div class="nav-item" onclick="openSection(event, 'contribution')">Contribution Model</div>
+    <div class="nav-item" onclick="openSection(event, 'failure')">Failure Modes</div>
+    <div class="nav-item" onclick="openSection(event, 'abstract')">Abstract Layer</div>
+</nav>
+
+<main>
+
+<section id="overview" class="active">
+<h2>Objective</h2>
+<p>
+Preserve group identity, mutual relevance, and emotional accessibility across time.
+The end goal: no member becomes socially foreign to the group despite physical separation.
+</p>
+
+<h2>Problem</h2>
+<p>
+Friendship entropy occurs when shared narrative reinforcement drops below decay rate.
+Coordination friction accelerates this decay.
+</p>
+</section>
+
+<section id="definitions">
+<h2>Core Definitions</h2>
+<ul>
+<li><strong>Cost:</strong> Cognitive + emotional + temporal effort required to contribute.</li>
+<li><strong>Activation Energy:</strong> Psychological resistance threshold before participation begins.</li>
+<li><strong>Friendship Entropy:</strong> Natural erosion of familiarity and narrative continuity over time.</li>
+<li><strong>Signal:</strong> Meaningful update that advances shared narrative or reveals internal state.</li>
+<li><strong>Reciprocity:</strong> Balanced participation measured over long time intervals.</li>
+<li><strong>Identity Cohesion:</strong> Degree to which members perceive belonging to an ongoing collective.</li>
+</ul>
+</section>
+
+<section id="axioms">
+<h2>Axioms</h2>
+<ul>
+<li>Identity requires recurring reinforcement.</li>
+<li>Participation ∝ 1 / Activation Energy.</li>
+<li>Narrative density compounds belonging.</li>
+<li>Long-term reciprocity stabilizes engagement.</li>
+<li>Periodic high-bandwidth sync recalibrates emotional alignment.</li>
+</ul>
+</section>
+
+<section id="implementation">
+<h2>Implementation Protocol</h2>
+<ul>
+<li>Establish a persistent communication channel.</li>
+<li>Normalize meaningful narrative signals.</li>
+<li>Reference past context to build density.</li>
+<li>Maintain asynchronous norms to reduce friction.</li>
+<li>Schedule periodic high-bandwidth sync sessions.</li>
+</ul>
+</section>
+
+<section id="contribution">
+<h2>Contribution Requirements</h2>
+<ul>
+<li>Life transitions</li>
+<li>Internal reflections</li>
+<li>Progress on ambitions</li>
+<li>Struggles and vulnerability</li>
+<li>Shared memory callbacks</li>
+</ul>
+<p>
+Contributions must increase narrative depth or emotional visibility.
+Filler communication does not sustain cohesion.
+</p>
+</section>
+
+<section id="failure">
+<h2>Failure Modes</h2>
+<ul>
+<li>Chronic asymmetry in contribution</li>
+<li>Unresolved interpersonal tension</li>
+<li>Signal overload fatigue</li>
+<li>Value divergence exceeding shared identity</li>
+<li>Ritualization without authenticity</li>
+</ul>
+</section>
+
+<section id="abstract">
+<h2>Abstract System Model</h2>
+<p>
+Friendship behaves as a dynamic equilibrium system.
+If reinforcement frequency drops below entropy rate, cohesion decays.
+If activation energy exceeds participation threshold, contribution collapses.
+</p>
+</section>
+
+</main>
+
+</div>
+
+<footer>
+Generated 2026-02-28 | Persistent Friendship Protocol
+</footer>
+
+<script>
+function openSection(evt, id) {
+    let items = document.querySelectorAll('.nav-item');
+    let sections = document.querySelectorAll('section');
+
+    items.forEach(i => i.classList.remove('active'));
+    sections.forEach(s => s.classList.remove('active'));
+
+    evt.currentTarget.classList.add('active');
+    document.getElementById(id).classList.add('active');
+}
+</script>
+
+</body>
+</html>
